@@ -215,7 +215,7 @@ async def update_comment(
             )
         
         
-        updated_comment = comment_service.update_comments(
+        updated_comment = comment_service.update(
             db=db, id=str(comment_id), content=request.content
         )
         
